@@ -54,12 +54,16 @@ function saveNote(){
   const Title = addedText[0]
   const Body = addedText.slice(1)
   notes.push({title: Title, noteBody: Body, id:notes.length + 1})
+  console.log(notes)
+  const Titles = `<li>${Title}</li>`
+  notesArea.insertAdjacentHTML('beforeend', Titles)
   cancelNote()
 }
 
 
 ///display notes in a side nav
 
+///Bonus
 
 ///read a note
 
