@@ -6,7 +6,7 @@ const notes = [
   }
 ]
 //query-selectors
-const writeArea = document.querySelector(".write-note-area")
+const writeArea = document.querySelector(".create-note-area")
 const notesArea = document.querySelector(".notes-list")
 
 //text area to write to
@@ -31,7 +31,6 @@ function createNote(){
   cancelling.addEventListener("click", cancelNote)
   const saveBtn = document.querySelector(".saveButton")
   saveBtn.addEventListener("click", saveNote)
-
 }
 
 function cancelNote(){
@@ -65,6 +64,21 @@ function saveNote(){
 
 ///Bonus
 
+function toggleTheme() {
+  const theme = document.querySelector(".main-container")
+  const btnState = document.querySelector(".theme-toggle")
+  btnState.addEventListener("click", () => {
+    let checkbox = document.getElementsByClassName('theme-toggle')
+    if (checkbox.checked == true){
+      theme.classList.toggle("light-theme")
+    } else {
+      theme.classList.toggle("dark-theme")
+    }
+  })
+}
+toggleTheme()
 ///read a note
 
+//button class is dark-mode-toggle
 
+//css .darkmode

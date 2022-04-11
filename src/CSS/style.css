@@ -17,9 +17,11 @@
   --text:     var(--not-black);
 }
 
-/* .dark-theme { */
-/*   --bg-color: var(--not-grey); */
-/* } */
+.dark-theme { 
+  --bg-color: var(--not-black); 
+  --bg-side:  var(--not-grey);
+  --text:     var(--not-white)
+}
 
 * {
   margin: 0;
@@ -95,6 +97,12 @@ header a {
 
 .note-area {
   width: 90%
+}
+
+.notes-list li {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.5rem;
 }
 
 article {
