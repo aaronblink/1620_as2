@@ -23,6 +23,10 @@
   --text:     var(--not-white)
 }
 
+li p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +37,6 @@
 .main-container {
   height: 100vh;
   display: flex;
-  font-family: 'Quicksand', sans-serif;
 }
 
 .side-note-menu {
@@ -110,7 +113,6 @@ article {
 }
 
 .read-note-area p {
-  font-family: 'Libre Baskerville', serif;
   color: var(--text);
   font-size: 1.6rem;
 }
@@ -154,7 +156,7 @@ button {
   color: var(--text);
   cursor: pointer;
   display: inline-block;
-  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family:'Open Sans', sans-serif;
   font-size: 12px;
   font-weight: 600;
   line-height: normal;
