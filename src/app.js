@@ -23,10 +23,12 @@ const cancelButton = `<button class='cancelButton' type='button'>
 Cancel
 </button>`
 
+const textAreaButtons = `<div>${saveButton} ${cancelButton}</div>`
+
 function createNote(){
-  writeArea.insertAdjacentHTML('afterend', cancelButton)
-  writeArea.insertAdjacentHTML('afterend', saveButton)
+  writeArea.insertAdjacentHTML('afterend', textAreaButtons)
   writeArea.insertAdjacentHTML('afterend', textArea)
+
   const cancelling = document.querySelector(".cancelButton")
   cancelling.addEventListener("click", cancelNote)
   const saveBtn = document.querySelector(".saveButton")
@@ -67,7 +69,7 @@ function saveNote(){
 function toggleTheme() {
   const theme = document.querySelector(".main-container")
   const btnState = document.querySelector(".theme-toggle")
-  btnState.addEventListener("click", () => {
+  btnState.addEventListener("click", (evt) => {
     let checkbox = document.getElementsByClassName('theme-toggle')
     if (checkbox.checked == true){
       theme.classList.toggle("light-theme")
@@ -77,8 +79,12 @@ function toggleTheme() {
   })
 }
 toggleTheme()
+
+
 ///read a note
 
 //button class is dark-mode-toggle
 
 //css .darkmode
+
+

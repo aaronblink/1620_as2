@@ -171,7 +171,7 @@ button {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 20%;
+  width: 11%;
   will-change: transform;
 }
 
