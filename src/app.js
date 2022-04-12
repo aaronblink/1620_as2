@@ -78,7 +78,6 @@ notesArea.addEventListener("click", (evt) => {
     readArea.insertAdjacentHTML('afterend', closeButton)
     const closingBtn = document.querySelector(".closeButton")
     closingBtn.addEventListener("click", closeDisplayNote)
-    console.log(closingBtn)
     for (const element of notes[notes.length -1].noteBody) {
       if (element == ''){  
       readArea.insertAdjacentHTML('beforeend', '<br>')
