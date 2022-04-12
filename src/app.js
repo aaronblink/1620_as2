@@ -71,22 +71,22 @@ function closeDisplayNote() {
   closeButton.remove()
 }
 
-// ///read a note
-// notesArea.addEventListener("click", (evt) => {
-//   if (evt.target.className == notes[notes.length - 1].id) {
-//     readArea.insertAdjacentHTML('beforeend', `<h1>${notes[notes.length - 1].title}</h1>`)
-//     readArea.insertAdjacentHTML('afterend', closeButton)
-//     const closingBtn = document.querySelector(".closeButton")
-//     closingBtn.addEventListener("click", closeDisplayNote)
-//     console.log(closingBtn)
-//     for (const element of notes[notes.length -1].noteBody) {
-//       if (element == ''){  
-//       readArea.insertAdjacentHTML('beforeend', '<br>')
-//       } else {readArea.insertAdjacentHTML('beforeend', `<p>${element}</p>`)
-//                readArea.insertAdjacentHTML('beforeend', '<br>')  
-//     }}
-//   } 
-// })
+///read a note
+notesArea.addEventListener("click", (evt) => {
+  if (evt.target.className == notes[notes.length - 1].id) {
+    readArea.insertAdjacentHTML('beforeend', `<h1>${notes[notes.length - 1].title}</h1>`)
+    readArea.insertAdjacentHTML('afterend', closeButton)
+    const closingBtn = document.querySelector(".closeButton")
+    closingBtn.addEventListener("click", closeDisplayNote)
+    console.log(closingBtn)
+    for (const element of notes[notes.length -1].noteBody) {
+      if (element == ''){  
+      readArea.insertAdjacentHTML('beforeend', '<br>')
+      } else {readArea.insertAdjacentHTML('beforeend', `<p>${element}</p>`)
+               readArea.insertAdjacentHTML('beforeend', '<br>')  
+    }}
+  } 
+})
 
 
 ///Bonus
